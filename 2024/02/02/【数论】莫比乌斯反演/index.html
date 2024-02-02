@@ -23,15 +23,15 @@
   <title>【数论】莫比乌斯反演 - shiyunhao的博客</title>
 
   
-    <meta name="description" content="一、数论函数 积性函数 数论函数指定义域为 \(\N*\) 的 函数。数论函数也可以视作一个数列。 积性函数的定义 若函数 \(f(n)\) 满足 \(f(1) &#x3D; 1\) 且 对于任意正整数 \(x, y\) 满足 \(\gcd(x, y) &#x3D; 1\)， 都有 \(f(xy)\) &#x3D; \(f(x)f(y)\)，则称 \(f(n)\) 是一个积性函数。若没有互素条件也满足 \(f">
+    <meta name="description" content="一、数论函数 积性函数 数论函数指定义域为 \(N*\) 的 函数。数论函数也可以视作一个数列。 积性函数的定义 若函数 \(f(n)\) 满足 \(f(1) &#x3D; 1\) 且 对于任意正整数 \(x, y\) 满足 \(\gcd(x, y) &#x3D; 1\)， 都有 \(f(xy)\) &#x3D; \(f(x)f(y)\)，则称 \(f(n)\) 是一个积性函数。若没有互素条件也满足 \(f(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【数论】莫比乌斯反演">
 <meta property="og:url" content="https://dabiannn.github.io/2024/02/02/%E3%80%90%E6%95%B0%E8%AE%BA%E3%80%91%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/index.html">
 <meta property="og:site_name" content="shiyunhao的博客">
-<meta property="og:description" content="一、数论函数 积性函数 数论函数指定义域为 \(\N*\) 的 函数。数论函数也可以视作一个数列。 积性函数的定义 若函数 \(f(n)\) 满足 \(f(1) &#x3D; 1\) 且 对于任意正整数 \(x, y\) 满足 \(\gcd(x, y) &#x3D; 1\)， 都有 \(f(xy)\) &#x3D; \(f(x)f(y)\)，则称 \(f(n)\) 是一个积性函数。若没有互素条件也满足 \(f">
+<meta property="og:description" content="一、数论函数 积性函数 数论函数指定义域为 \(N*\) 的 函数。数论函数也可以视作一个数列。 积性函数的定义 若函数 \(f(n)\) 满足 \(f(1) &#x3D; 1\) 且 对于任意正整数 \(x, y\) 满足 \(\gcd(x, y) &#x3D; 1\)， 都有 \(f(xy)\) &#x3D; \(f(x)f(y)\)，则称 \(f(n)\) 是一个积性函数。若没有互素条件也满足 \(f(">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-02-02T09:29:13.000Z">
-<meta property="article:modified_time" content="2024-02-02T01:31:00.491Z">
+<meta property="article:modified_time" content="2024-02-02T04:29:23.847Z">
 <meta property="article:author" content="Shi Yunhao">
 <meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
@@ -105,7 +105,7 @@
 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <h2 id="一数论函数-积性函数">一、数论函数 积性函数</h2>
-<p>数论函数指定义域为 <span class="math inline">\(\N*\)</span> 的
+<p>数论函数指定义域为 <span class="math inline">\(N*\)</span> 的
 函数。数论函数也可以视作一个数列。</p>
 <h4 id="积性函数的定义">积性函数的定义</h4>
 <p>若函数 <span class="math inline">\(f(n)\)</span> 满足 <span
@@ -139,10 +139,10 @@ f(d)g(\frac{x}{d})\)</span></p></li>
 <li>常函数：<span class="math inline">\(1(n) = 1\)</span> （完全）</li>
 <li>欧拉函数：<span class="math inline">\(\varphi(n) = \sum_{i = 1}^n
 [\gcd(i, n) = 1]\)</span></li>
-<li>莫比乌斯函数：$(n) =
-<span class="math display">\[\begin{cases} 0 &amp; \exists d &gt; 1, d^2
-| n \\ (-1)^{\omega(n)} &amp; \text{otherwise.} \end{cases}\]</span>
-$ 其中，<span class="math inline">\(\omega(n)\)</span> 表示 <span
+<li>莫比乌斯函数：<span class="math display">\[\mu(n) =\begin{cases} 0
+&amp; \exists d &gt; 1, d^2 | n \\ (-1)^{\omega(n)} &amp;
+\text{otherwise.} \end{cases} \]</span> 其中，<span
+class="math inline">\(\omega(n)\)</span> 表示 <span
 class="math inline">\(n\)</span>
 的本质不同质因子个数。它是一个加性函数（即任意 <span
 class="math inline">\(\gcd(a, b) = 1\)</span>，满足 <span
