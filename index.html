@@ -54,7 +54,119 @@
 
 
   
-</head>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body>
   
@@ -101,11 +213,24 @@
 <article class="md-text"><h2 class="post-title">【数论】莫比乌斯反演</h2><div class="excerpt"><p>
 
 一、数论函数 积性函数
-数论函数指定义域为 \(N*\) 的
+数论函数指定义域为  的
 函数。数论函数也可以视作一个数列。
 积性函数的定义
-若函数 \(f(n)\) 满足 \(f(1) = 1\) 且 对于任意正整数 \(x, y\) 满足 \(\gcd(x, y) = 1\)， 都有 \(f(xy)\) = \(f(x)f(y)\)，则称 \(f(n)\)
-是一个积性函数。若没有互素条件也满足 \...</p></div><div class="meta cap"><span class="cap" id="post-meta">Posted on&nbsp;<time datetime="2024-02-02T09:29:13.000Z">2024-02-02</time></span></div></article>
+若函数  满足  且 对于任意正整数  满足 ， 都有  = ，则称 
+是一个积性函数。若没有互素条件也满足 ，则称  是一个
+完全积性函数。
+积性函数的性质
+若  与 
+都为积性函数，则以下函数也为积性函数：
+
+
+
+
+
+
+常见的积性函数
+
+单位函...</p></div><div class="meta cap"><span class="cap" id="post-meta">Posted on&nbsp;<time datetime="2024-02-02T09:29:13.000Z">2024-02-02</time></span></div></article>
 </a><a class="post-card post " href="/2023/10/18/%E3%80%8A%E7%8C%B1%E3%80%8B/">
 <article class="md-text"><h2 class="post-title">《猱》</h2><div class="excerpt"><p>猱〔明〕刘元卿
 ​	兽有猱，小而善缘，利爪。虎首痒，则使猱爬搔之；不休，成穴，虎殊快不觉也。猱徐取其脑啖之，而汰其余以奉虎曰：“余偶有所获，腥不敢私，以献左右。”虎曰：“忠哉，猱也！爱我而忘其口腹。”啖已又弗觉也。久而虎脑空，痛发，迹猱，猱则已走避高木，虎跳踉大吼乃死。
